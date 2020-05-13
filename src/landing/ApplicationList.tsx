@@ -75,7 +75,7 @@ export class ApplicationList extends Component<Props, State> {
                       <Label
                         text={`${
                           app.variants ? app.variants.length : 0
-                        } variants`}
+                          } variants`}
                         icon={'fa fa-code-branch'}
                       />
                     </ListItem>
@@ -93,7 +93,10 @@ export class ApplicationList extends Component<Props, State> {
                         variant="secondary"
                         icon={<EditIcon />}
                         onClick={() =>
-                          this.setState({ dialogModal: true, selectedApp: app })
+                          this.setState({
+                            deleteApplicationPage: true,
+                            selectedApp: app,
+                          })
                         }
                       >
                         <EditIcon />
@@ -104,7 +107,10 @@ export class ApplicationList extends Component<Props, State> {
                         variant="danger"
                         icon={TrashIcon}
                         onClick={() =>
-                          this.setState({ dialogModal: true, selectedApp: app })
+                          this.setState({
+                            deleteApplicationPage: true,
+                            selectedApp: app,
+                          })
                         }
                       >
                         <TrashIcon />
