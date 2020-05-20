@@ -88,34 +88,6 @@ export class ApplicationList extends Component<Props, State> {
                         icon={'fa fa-mobile'}
                       />
                     </ListItem>
-                    <ListItem>
-                      <Button
-                        variant="secondary"
-                        icon={<EditIcon />}
-                        onClick={() =>
-                          this.setState({
-                            deleteApplicationPage: true,
-                            selectedApp: app,
-                          })
-                        }
-                      >
-                        <EditIcon />
-                      </Button>
-                    </ListItem>
-                    <ListItem>
-                      <Button
-                        variant="danger"
-                        icon={TrashIcon}
-                        onClick={() =>
-                          this.setState({
-                            deleteApplicationPage: true,
-                            selectedApp: app,
-                          })
-                        }
-                      >
-                        <TrashIcon />
-                      </Button>
-                    </ListItem>
                   </List>
                 </div>
               </DataListCell>,
