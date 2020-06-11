@@ -1,3 +1,9 @@
+@import 'app-dashboard.scss';
+@import 'landing-page.scss';
+@import 'app-list.scss';
+@import 'globals.scss' ;
+
+
 #root {
   height: 100%;
 }
