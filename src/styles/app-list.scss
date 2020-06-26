@@ -1,5 +1,21 @@
-.appList:hover  .buttonGroup {
-  opacity: 1;
+@import 'globals.scss' ;
+.title {
+  color: rgb(85,85,85);
+}
+
+.subtitle {
+  color: #999;
+}
+
+.app-icon {
+  background-color: $aerogearBlue;
+  color: rgba(255,255,255,.9);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  text-transform: capitalize;
 }
 
 .buttonGroup {
@@ -11,6 +27,15 @@
   transition: opacity 0.4s ease-in-out;
 }
 
-.appList:hover  .buttonGroup {
-  opacity: 1;
+.appList:hover {
+  cursor: pointer;
+  .buttonGroup {
+    opacity: 1;
+  }
+  .app-icon {
+    background-color: #124d77;
+  }
+  .title {
+    text-decoration: underline;
+  }
 }
